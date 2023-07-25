@@ -1,0 +1,11 @@
+<!-- views/homepage.handlebars -->
+<div class="container">
+    <h2>Welcome to Our Blog Site!</h2>
+    {{#each blogs as |blog|}}
+        <div>
+            <h3><a href="/blog/{{blog.id}}">{{blog.title}}</a></h3>
+            <p>{{blog.content}}</p>
+            <p>Posted by {{blog.User.username}} on {{blog.createdAt}}</p>
+        </div>
+    {{/each}}
+</div>
