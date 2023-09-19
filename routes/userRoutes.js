@@ -4,7 +4,7 @@ const { User } = require('../models');
 const bcrypt = require('bcrypt');
 
 // POST route for user registration
-router.post('/register', async (req, res) => {
+router.post('/signup', async (req, res) => {
     try {
         const userData = await User.create({
             username: req.body.username,

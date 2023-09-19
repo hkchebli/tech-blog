@@ -13,13 +13,24 @@
     <h2>New Post</h2>
     <form id="new-post-form">
         <div class="form-group">
-            <label for="post-title-input">Title</label>
-            <input type="text" id="post-title-input" class="form-control" required>
+            <label for="blog-title-input">Title</label>
+            <input type="text" id="blog-title-input" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="post-content-input">Content</label>
-            <textarea id="post-content-input" class="form-control" required></textarea>
+            <label for="blog-content-input">Content</label>
+            <textarea id="blog-content-input" class="form-control" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Create Post</button>
+        <button type="submit" class="btn btn-primary" >Create Post</button>
     </form>
+    <script src="/js/dashboard.js"></script>
 </div>
+
+<script>
+  window.onload = function() {
+    if(document.querySelector('#new-post-form')) {
+        alert('Form exists!');
+    } else {
+        alert('Form does not exist!');
+    }
+  }
+</script>

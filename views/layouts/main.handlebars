@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <!-- Add any other global stylesheets here -->
+</head>
+<body>
+    <!-- This is how to include the navbar partial -->
+    {{> navbar}}
+
+    <!-- This is where other views will be inserted -->
+    <div class="container">
+        {{{body}}}
+    </div>
+
+    <!-- You could add a footer here, too -->
+
+    <script src="/js/login.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/comments.js"></script>
+    <!-- Add any other global scripts here -->
+</body>
+</html>

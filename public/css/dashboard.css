@@ -1,0 +1,17 @@
+/* public/css/dashboard.css */
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.delete-post-btn {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-post-btn:hover {
+    background-color: #c00;
+}
